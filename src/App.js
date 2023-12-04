@@ -3,7 +3,9 @@ import Header from './componentes/layout/Header';
 
 function App() {
   return (
+    <Fragment>
       <Header />
+    </Fragment>
   );
 }
 
