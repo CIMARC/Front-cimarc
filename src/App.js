@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 //import Header from './componentes/layout/Header';
-import Login from './componentes/layout/Login';
+import Login from './componentes/auth/Login';
 
 function App() {
   return (

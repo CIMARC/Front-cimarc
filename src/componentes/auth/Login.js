@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import '../../assets/css/login.css';// Asegúrate de que el archivo CSS esté en la misma carpeta que este archivo de componente
+import React, { useContext,useState } from 'react';
+import Swal from 'sweetalert2';
+import { Navigate } from 'react-router-dom';
+import clienteAxios from '../../config/axios';
 
 const Login = () => {
     const [usuario, setUsuario] = useState('');
