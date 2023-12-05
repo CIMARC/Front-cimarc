@@ -1,9 +1,16 @@
 import React, { useContext,useState } from 'react';
 import Swal from 'sweetalert2';
-import { Navigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import clienteAxios from '../../config/axios';
 
+//Context
+import { CRMContext } from '../../context/CRMContext';
+
 const Login = () => {
+    // const history = useNavigate();
+    
+    // // Auth y token
+    // const [auth,guardarAuth] = useContext(CRMContext);
     const [usuario, setUsuario] = useState('');
     const [password, setPassword] = useState('');
     const [recordar, setRecordar] = useState(false);
